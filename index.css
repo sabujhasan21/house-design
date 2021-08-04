@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=STIX+Two+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=STIX+Two+Text:ital,wght@1,700&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.sec1{
+    width: 100%;
+    height: 643px;
+    background-image: url("remi-thorel-I6RKnV1Usfw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec1:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 5, 78);
+    opacity: 0.5;
+}
+.navsec{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.navsec img{
+    max-width: 200px;
+}
+.navsec nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li a{
+    padding: 9px 10px;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+}
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.233);
+    box-shadow: 0px 10px 36px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.sec1-main{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+.sec1-main h2{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+.sec1-main p{
+    width: 48%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 80px;
+    font-family: 'STIX Two Text', serif;
+}
+.linkx{
+    width: 50%;
+    margin: auto;
+}
+.link1{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border: 2px solid #008688;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 17px;
+}
+.glass{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 0%;
+    height: 100%;
+    background-color:#008688;
+    border-radius: 17px;
+    display: block;
+    transition: 0.5s;
+}
+.link1:hover .glass{
+    position: absolute;
+    width: 100%;
+
+}
+.link1 a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.link2{
+    position: relative;
+    width: 140px;
+    height: 30px;
+    border: 2px solid #008688;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 17px;
+}
+.link2:hover .glass{
+    position: absolute;
+    width: 100%;
+
+}
+.link2 a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width:700px){
+    
+    .sec1{
+        width: 100%;
+        height: 100vh;
+        background-image: url("remi-thorel-I6RKnV1Usfw-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec1:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(5, 5, 78);
+        opacity: 0.5;
+    }
+    .navsec{
+        width: 96%;
+    }
+    .navsec img{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 80px;
+    }
+    
+    nav{
+        position: absolute;
+        left: -50px;
+        top: 30px;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav ul li{
+        float: left;
+        margin-left: 5px;
+    }
+    nav ul li a{
+        padding: 2px 5px;
+        font-size: 11px;
+        text-decoration: none;
+        color:#fff;
+        text-transform: uppercase;
+        font-family: 'Merriweather', serif;
+    }
+
+    .sec1-main{
+        position: relative;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 300px;
+    }
+    .sec1-main h2{
+        color: #fff;
+        font-size: 29px;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+    }
+    .sec1-main p{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin-bottom: 80px;
+        font-family: 'STIX Two Text', serif;
+    }
+
+
+    .linkx{
+        width: 80%;
+        margin: auto;
+    }
+    .link1{
+        position: relative;
+        width: 100px;
+        height: 20px;
+        border: 2px solid #008688;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        border-radius: 17px;
+    }
+    .glass{
+        position: absolute;
+        top: 0%;
+        left:0%;
+        width: 0%;
+        height: 100%;
+        background-color:#008688;
+        border-radius: 17px;
+        display: block;
+        transition: 0.5s;
+    }
+    .link1:hover .glass{
+        position: absolute;
+        width: 100%;
+    
+    }
+    .link1 a{
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .link2{
+        position: relative;
+        width: 100px;
+        height: 20px;
+        border: 2px solid #008688;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        border-radius: 17px;
+    }
+    .link2:hover .glass{
+        position: absolute;
+        width: 100%;
+    
+    }
+    .link2 a{
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+}
